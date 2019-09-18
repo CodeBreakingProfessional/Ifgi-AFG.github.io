@@ -1,0 +1,55 @@
+body {
+  background-color:#C5C1C0;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.largeHeader{
+  /*height:600px;*/
+  height:90vh;
+}
+.fullScreenImage{
+  height: 100%;
+  width: 100%;
+}
+.havixbeck {
+  background-image: url(../images/havixbeck2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#mapid{
+  height:400px;
+}
+.hellgrau{
+  background-color: #f2f2f2;
+}
+  .ueberschrift{
+font-family: cursive;
+
+  }
+  .rahmen{
+     border: 2px solid #F7CE3E; 
+  }
+  .steel{
+   background-color: #0A1612;
+  }
+  .screen{
+    background-color:#C5C1C0;
+  }  
+  .denim{
+  background-color:#1A2930;
+}
+.grau{
+  background-color:#f2f2f2 ;
+}
+.jumbotron{
+  background-color:white;
+}
+.rahmenblack{
+   border: 2px solid black; 
+}
