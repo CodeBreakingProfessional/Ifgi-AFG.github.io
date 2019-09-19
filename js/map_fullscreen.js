@@ -119,7 +119,7 @@ legend.onAdd = function (map) {
         labels.push('<i class="circle" style="background:' + getColor(categories[i]) + '"></i> ' +  (categories[i] ? categories[i] : '+'));
     }
     div.innerHTML = labels.join('<br>');*/
-    div.innerHTML = "<div style='display:inline; background-color: white;'><img src='images/Unterwegs_ChatBot.jpg' style=' width: 20%'><br> Die angezeigten Daten wurden mit Hilfe von E-Scootern und Senseboxen gesammelt.<br>Niedrig <img style='width: 20%; height: 5%;'src='images/legendColor.png'> Hoch</div>";
+    div.innerHTML = "<div style='display:inline; background-color: white;'><img src='images/Unterwegs_ChatBot.jpg' style=' width: 20%'><br> Die angezeigten Daten wurden mit Hilfe von E-Scootern und Senseboxen gesammelt.<br>Niedrig <img style='width: 20%; height: 5%;'src='images/legendColor.PNG'> Hoch</div>";
     return div;
 };
 legend.addTo(map);
