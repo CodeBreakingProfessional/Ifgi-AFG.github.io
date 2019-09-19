@@ -28,20 +28,19 @@ a {
 .hellgrau{
   background-color: #f2f2f2;
 }
-  .ueberschrift{
+.ueberschrift{
 font-family: cursive;
-
-  }
-  .rahmen{
+}
+.rahmen{
      border: 2px solid #F7CE3E; 
-  }
-  .steel{
-   background-color: #0A1612;
-  }
-  .screen{
+}
+.steel{
+  background-color: #0A1612;
+}
+.screen{
     background-color:#C5C1C0;
-  }  
-  .denim{
+}  
+.denim{
   background-color:#1A2930;
 }
 .grau{
@@ -52,4 +51,10 @@ font-family: cursive;
 }
 .rahmenblack{
    border: 2px solid black; 
+}
+.lead{
+  text-align:justify;
+}
+.leaflet-control-layers-list{
+  padding: 0px !important;
 }

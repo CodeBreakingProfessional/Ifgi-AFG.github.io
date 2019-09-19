@@ -1,0 +1,144 @@
+
+<!doctype html>
+<html lang="de">
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <meta name="description" content="">
+	  <meta name="author" content="">
+	  <title>AFG-Ifgi Projektwoche</title>
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	  <link href="css/scrolling-nav.css" rel="stylesheet">
+	  <link href="css/style.css" rel="stylesheet">
+	  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+	  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+	  crossorigin=""/>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+	   <link rel="stylesheet" href="css/slideshow.css">
+	</head>
+	<body>
+
+	    <nav class="navbar navbar-expand-md navbar-dark fixed-top steel">
+	      <a class="navbar-brand" href="#">Menü</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
+	      <div class="collapse navbar-collapse" id="navbarCollapse">
+	        <ul class="navbar-nav mr-auto">
+	          <li class="nav-item">
+	            <a class="nav-link" href="index.html">Start </a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="chatbot.html">Chatbot </a>
+	          </li>
+	          <li class="nav-item active">
+	            <a class="nav-link" href="#"> Sensebox <span class="sr-only">(current)</span></a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="Bilderkennung.html">Bilderkennung</a>
+	          </li>	          <li class="nav-item">
+	            <a class="nav-link" href="website.html">Website</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="ethik.html">Ethik</a>
+	          </li>
+	        </ul>	      
+	      </div>
+	    </nav>
+
+	    <main role="main" class="container">
+	      <div class="jumbotron rahmen">
+	        <h1><b><u>Sensebox </u></b></h1><br>
+	        <h5><b>Einleitung: </b>In der Sensebox-Gruppe werden Messgeräte für Feinstaub und Wetterdaten gebaut und programmiert. Die Geräte werden stationäre und mobil eingesetzt und in Münster und Havixbeck aufgestellt. Die erfassten Daten werden analysiert.</h5>
+	        <h5>Feinstaub- und Temperaturdaten mit Senseboxes an Elektroscootern gesammelt: </h5>
+	        <div id="mapid"></div>
+	        <br>
+	        <a href="eScooterSensebox.html" target="_blank">Hier gehts zur Vollbild Karte</a>
+	        <br>
+	        <br>
+	        <h5>Temperaturdaten von Münster und Nottuln im Vergleich: </h5>
+	        <canvas id="tempChart" width="60%" height="20vh"></canvas>
+	        <h2><i>Der erste Tag <h4>Montag der 16.09.2019</h4></i></h2>
+			        <p class="lead">
+			        Heute, am Montag den 16.09.2019, hat unsere Projektwoche im Institut für Geoinformatik in Münster begonnen. Wir sind in der Sensebox-Gruppe und befassen uns hauptsächlich mit dem Thema „Wetter“ und analysieren mit den Senseboxen das Klima und den Klimawandel. 
+					Zu Beginn, erst einmal: Was sind überhaupt Senseboxen? <br><br>
+					Mit dieser Frage haben wir uns auseinandergesetzt und recherchiert.
+					Eine Sensebox ist ein einfaches Hilfsmittel mit vielen Sensoren, die unter anderem den Luftdruck, die Luftfeuchtigkeit und die Temperatur messen können. Es ist sehr einfach zu benutzen, wenn man es verstanden hat. Außerdem hilft es uns dabei das Klima weltweit zu erforschen und die Veränderungen zu vergleichen.<br><br>
+					Als nächstes haben wir das Programmieren gelernt und selbst ausprobiert. Wir haben eine Sensebox zusammengebaut und diese zum Laufen gebracht. 
+					Wir sind gespannt, wie der zweite Tag wird.</p><br>
+
+					<h2><i>Der zweite Tag <h4>Dienstag der 17.09.2019</h4></i></h2>
+			        <p class="lead">
+			        Heute ist Dienstag. Der zweite Tag hat begonnen. Wir haben uns wie gewohnt um 8.30 Uhr getroffen und weiter an unseren Senseboxen gearbeitet. Unsere Gruppe hat besonders viel mit dem Programm „OpensenseMap“ gearbeitet. Jeder einzelne aus unserer Gruppe hat sich einen eigenen Account erstellt, um die festen Stationen (Senseboxen), die dann heute nach dem Tag bei uns zu Hause installiert werden, zu beobachten.
+					Besonders gut gefällt es uns, dass wir jetzt schon so gut mit dem Programmieren umgehen können, „ebenso das Zusammenbauen der Senseboxen, da kommen Erinnerungen aus dem Technikunterricht in der 7. Klasse hoch“, erzählte Melina Zwilling aus unserer Gruppe. 
+					Außerdem haben wir stationäre und mobile Sensoren aufgebaut und die passenden Programme dafür geschrieben. 
+					Wir freuen uns auf den morgigen Tag. </p><br>
+
+					<h2><i>Der dritte Tag <h4>Mittwoch der 18.09.2019</h4></i></h2>
+			        <p class="lead">
+			        An Tag drei, haben wir unsere Handys mit der “Opensense Map”, einer Karte die unsere Senseboxen abbildet, verbunden. da es gestern dabei Probleme gab.
+
+					Dann haben wir die Senseboxen weiter programmiert und mithilfe unserer Handys überprüft, ob alles funktioniert.
+					Als das dann alles erledigt war, hat sich unsere Gruppe mit den Geräten auf den Weg nach draußen gemacht, um die Luftfeuchtigkeit, die Feinstaubbelastung, die Temperatur und unsere eigene Geschwindigkeit zu analysieren. Dank eines GPS konnte die Website-Gruppe erkennen, in welchen Straßen am meisten Feinstaubbelalstung vorliegt. Dabei gab es leider ein paar Probleme, da der GPS die Standorte nicht genau erkannt hat. Zum Glück war es nicht so wichtig, genau zu wissen, wo wir uns befanden.
+
+					Ein Teil unserer Gruppe ist gelaufen, andere sind mit öffentlichen E-Scootern rumgefahren. Leo Krug und Emil Kolling haben sich mit dem Auto auf den Weg gemacht und sind durch die Straßen von Münster gefahren und haben dabei diverse Messungen durchgeführt.  
+
+					Gestern haben Max Scheck und Adrian Gödde ihre Senseboxen zuhause installiert.Diese messen den Tag über relevate Daten und werden morgen für die Sensebox-Gruppe, über einen Beamer dar gestellt und ebenfalls überprüft.
+					Da Leo Krug ein eigenes Auto hat, hat er eine Sensebox an seinem Auto installiert und ist damit nach Hause gefahren, damit wir die Daten für unsere Präsentation am Freitag nutzen können.
+
+					Der Tag war sehr erfolgreich.</p><br>
+					
+
+			        <h2><i>Der vierte Tag <h4>Donnerstag der 19.09.2019</h4></i></h2>
+			        <p class="lead">
+			        Heute beginnt der letzte Tag im Institut für Geoinformatik.
+					Wir haben zu Beginn überprüft, ob die Aufnahme der Daten erfolgreich war und diese anschließend ausgewertet.
+					Dann haben wir angefangen, für den morgigen Tag die Präsentation vorzubereiten. Wir setzten uns mit der Kommunikations-Gruppe zusammen, da diese Gruppe die Präsentation leitet und wir uns mit ihnen und den anderen 5 abstimmen müssen.
+					Heute wurde ordentlich gearbeitet und wir sind zu sehr tollen Ergebnissen gekommen.
+					Unsere Gruppe ist sehr gespannt, was die anderen Gruppen so erlebt haben.</p><br>
+					<h5>made by Smilla Heldt and Noah Keshet</h5>
+
+					<div id="carouselExampleIndicators" class="carousel slide w-50" data-ride="carousel">
+					  <ol class="carousel-indicators w-50">
+					    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					  </ol>
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">					    
+					      	<img class="d-block w-100" src="images/SenseBox.jpeg" alt="First slide">
+					    </div>
+					    <div class="carousel-item">
+					      <img class="d-block w-100" src="images/Chatbot__unterwegs.jpg" alt="Second slide">
+					    </div>
+					    <div class="carousel-item">
+					      <img class="d-block w-100" src="images/Unterwegs_ChatBot.jpg" alt="Third slide">
+					    </div>
+					  </div>
+					  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
+	      </div>
+	    </main>
+	  <script  src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	  <script src="js/jquery-csv.js"></script>
+
+	  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+  		integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+  		crossorigin=""></script>
+  	  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
+  	  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+  	  <script src="js/Leaflet.MultiOptionsPolyline.min.js"></script>
+
+  	  <script src="js/map.js"></script>
+	  <script src="js/chart.js"></script>
+	</body>
+</html>
